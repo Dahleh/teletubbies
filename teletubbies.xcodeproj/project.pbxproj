@@ -11,6 +11,7 @@
 		CDE7D8D4208E11F40080C155 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE7D8D3208E11F40080C155 /* ChatVC.swift */; };
 		CDE7D8D6208E12060080C155 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE7D8D5208E12060080C155 /* ChannelVC.swift */; };
 		CDE7D8DA208E15A70080C155 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE7D8D7208E15160080C155 /* SWRevealViewController.m */; };
+		CDE7D8DD208E1D590080C155 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE7D8DC208E1D590080C155 /* GradientView.swift */; };
 		CDF54C2B208DFA3800F050C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF54C2A208DFA3800F050C4 /* AppDelegate.swift */; };
 		CDF54C30208DFA3800F050C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDF54C2E208DFA3800F050C4 /* Main.storyboard */; };
 		CDF54C32208DFA3A00F050C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDF54C31208DFA3A00F050C4 /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 		CDE7D8D7208E15160080C155 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		CDE7D8D8208E15160080C155 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		CDE7D8DB208E15BF0080C155 /* teletubbies-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "teletubbies-Bridging-Header.h"; sourceTree = "<group>"; };
+		CDE7D8DC208E1D590080C155 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		CDF54C27208DFA3800F050C4 /* teletubbies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = teletubbies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDF54C2A208DFA3800F050C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDF54C2F208DFA3800F050C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 		CDE7D8D1208E11CF0080C155 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				CDE7D8DC208E1D590080C155 /* GradientView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 			files = (
 				CDE7D8D6208E12060080C155 /* ChannelVC.swift in Sources */,
 				CDE7D8D4208E11F40080C155 /* ChatVC.swift in Sources */,
+				CDE7D8DD208E1D590080C155 /* GradientView.swift in Sources */,
 				CDF54C2B208DFA3800F050C4 /* AppDelegate.swift in Sources */,
 				CDE7D8DA208E15A70080C155 /* SWRevealViewController.m in Sources */,
 			);
