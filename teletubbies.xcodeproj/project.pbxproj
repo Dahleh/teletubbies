@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CBAB7B05472BDF3AD175EA33 /* Pods_teletubbies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C92F5E25C4929771C5D43DC9 /* Pods_teletubbies.framework */; };
+		CDE7D8CF208E080D0080C155 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE7D8CE208E080D0080C155 /* SWRevealViewController.m */; };
 		CDF54C2B208DFA3800F050C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF54C2A208DFA3800F050C4 /* AppDelegate.swift */; };
 		CDF54C2D208DFA3800F050C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF54C2C208DFA3800F050C4 /* ViewController.swift */; };
 		CDF54C30208DFA3800F050C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDF54C2E208DFA3800F050C4 /* Main.storyboard */; };
@@ -15,6 +17,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4ABDA2F3FDEDC6730B51B9C3 /* Pods-teletubbies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-teletubbies.debug.xcconfig"; path = "Pods/Target Support Files/Pods-teletubbies/Pods-teletubbies.debug.xcconfig"; sourceTree = "<group>"; };
+		C92F5E25C4929771C5D43DC9 /* Pods_teletubbies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_teletubbies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CDE7D8CC208E080B0080C155 /* teletubbies-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "teletubbies-Bridging-Header.h"; sourceTree = "<group>"; };
+		CDE7D8CD208E080D0080C155 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		CDE7D8CE208E080D0080C155 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		CDF54C27208DFA3800F050C4 /* teletubbies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = teletubbies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDF54C2A208DFA3800F050C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDF54C2C208DFA3800F050C4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +29,7 @@
 		CDF54C31208DFA3A00F050C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDF54C34208DFA3A00F050C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CDF54C36208DFA3A00F050C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7D5A8BEF0CCCC5A9F8BA9AD /* Pods-teletubbies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-teletubbies.release.xcconfig"; path = "Pods/Target Support Files/Pods-teletubbies/Pods-teletubbies.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,48 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CBAB7B05472BDF3AD175EA33 /* Pods_teletubbies.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9F1A897202309894B9C30FD1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C92F5E25C4929771C5D43DC9 /* Pods_teletubbies.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C9B1B877FF98E3D46FAB5D86 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4ABDA2F3FDEDC6730B51B9C3 /* Pods-teletubbies.debug.xcconfig */,
+				F7D5A8BEF0CCCC5A9F8BA9AD /* Pods-teletubbies.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CDE7D8CB208E07C50080C155 /* Supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				CDE7D8CD208E080D0080C155 /* SWRevealViewController.h */,
+				CDE7D8CE208E080D0080C155 /* SWRevealViewController.m */,
+				CDE7D8CC208E080B0080C155 /* teletubbies-Bridging-Header.h */,
+			);
+			path = "Supporting files";
+			sourceTree = "<group>";
+		};
 		CDF54C1E208DFA3800F050C4 = {
 			isa = PBXGroup;
 			children = (
+				CDE7D8CB208E07C50080C155 /* Supporting files */,
 				CDF54C29208DFA3800F050C4 /* teletubbies */,
 				CDF54C28208DFA3800F050C4 /* Products */,
+				C9B1B877FF98E3D46FAB5D86 /* Pods */,
+				9F1A897202309894B9C30FD1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CDF54C39208DFA3A00F050C4 /* Build configuration list for PBXNativeTarget "teletubbies" */;
 			buildPhases = (
+				5DAB7474C83A8C6564D3C0A7 /* [CP] Check Pods Manifest.lock */,
 				CDF54C23208DFA3800F050C4 /* Sources */,
 				CDF54C24208DFA3800F050C4 /* Frameworks */,
 				CDF54C25208DFA3800F050C4 /* Resources */,
+				5E9D3F88E6079199E2A18878 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -96,6 +137,7 @@
 				TargetAttributes = {
 					CDF54C26208DFA3800F050C4 = {
 						CreatedOnToolsVersion = 9.3;
+						LastSwiftMigration = 0930;
 					};
 				};
 			};
@@ -130,6 +172,49 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5DAB7474C83A8C6564D3C0A7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-teletubbies-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E9D3F88E6079199E2A18878 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-teletubbies/Pods-teletubbies-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Socket.IO-Client-Swift/SocketIO.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SocketIO.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-teletubbies/Pods-teletubbies-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CDF54C23208DFA3800F050C4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -137,6 +222,7 @@
 			files = (
 				CDF54C2D208DFA3800F050C4 /* ViewController.swift in Sources */,
 				CDF54C2B208DFA3800F050C4 /* AppDelegate.swift in Sources */,
+				CDE7D8CF208E080D0080C155 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,8 +364,10 @@
 		};
 		CDF54C3A208DFA3A00F050C4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4ABDA2F3FDEDC6730B51B9C3 /* Pods-teletubbies.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 62YN96Z7HR;
 				INFOPLIST_FILE = teletubbies/Info.plist;
@@ -289,6 +377,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.farisdahleh.teletubbies;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Supporting files/teletubbies-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -296,8 +386,10 @@
 		};
 		CDF54C3B208DFA3A00F050C4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7D5A8BEF0CCCC5A9F8BA9AD /* Pods-teletubbies.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 62YN96Z7HR;
 				INFOPLIST_FILE = teletubbies/Info.plist;
@@ -307,6 +399,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.farisdahleh.teletubbies;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Supporting files/teletubbies-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
