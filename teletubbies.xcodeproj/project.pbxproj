@@ -8,9 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		CBAB7B05472BDF3AD175EA33 /* Pods_teletubbies.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C92F5E25C4929771C5D43DC9 /* Pods_teletubbies.framework */; };
-		CDE7D8CF208E080D0080C155 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE7D8CE208E080D0080C155 /* SWRevealViewController.m */; };
+		CDE7D8D4208E11F40080C155 /* ChatVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE7D8D3208E11F40080C155 /* ChatVC.swift */; };
+		CDE7D8D6208E12060080C155 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE7D8D5208E12060080C155 /* ChannelVC.swift */; };
+		CDE7D8DA208E15A70080C155 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDE7D8D7208E15160080C155 /* SWRevealViewController.m */; };
 		CDF54C2B208DFA3800F050C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF54C2A208DFA3800F050C4 /* AppDelegate.swift */; };
-		CDF54C2D208DFA3800F050C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF54C2C208DFA3800F050C4 /* ViewController.swift */; };
 		CDF54C30208DFA3800F050C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDF54C2E208DFA3800F050C4 /* Main.storyboard */; };
 		CDF54C32208DFA3A00F050C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDF54C31208DFA3A00F050C4 /* Assets.xcassets */; };
 		CDF54C35208DFA3A00F050C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDF54C33208DFA3A00F050C4 /* LaunchScreen.storyboard */; };
@@ -19,12 +20,13 @@
 /* Begin PBXFileReference section */
 		4ABDA2F3FDEDC6730B51B9C3 /* Pods-teletubbies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-teletubbies.debug.xcconfig"; path = "Pods/Target Support Files/Pods-teletubbies/Pods-teletubbies.debug.xcconfig"; sourceTree = "<group>"; };
 		C92F5E25C4929771C5D43DC9 /* Pods_teletubbies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_teletubbies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CDE7D8CC208E080B0080C155 /* teletubbies-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "teletubbies-Bridging-Header.h"; sourceTree = "<group>"; };
-		CDE7D8CD208E080D0080C155 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
-		CDE7D8CE208E080D0080C155 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		CDE7D8D3208E11F40080C155 /* ChatVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatVC.swift; sourceTree = "<group>"; };
+		CDE7D8D5208E12060080C155 /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
+		CDE7D8D7208E15160080C155 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		CDE7D8D8208E15160080C155 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		CDE7D8DB208E15BF0080C155 /* teletubbies-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "teletubbies-Bridging-Header.h"; sourceTree = "<group>"; };
 		CDF54C27208DFA3800F050C4 /* teletubbies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = teletubbies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDF54C2A208DFA3800F050C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CDF54C2C208DFA3800F050C4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CDF54C2F208DFA3800F050C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CDF54C31208DFA3A00F050C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CDF54C34208DFA3A00F050C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -64,17 +66,39 @@
 		CDE7D8CB208E07C50080C155 /* Supporting files */ = {
 			isa = PBXGroup;
 			children = (
-				CDE7D8CD208E080D0080C155 /* SWRevealViewController.h */,
-				CDE7D8CE208E080D0080C155 /* SWRevealViewController.m */,
-				CDE7D8CC208E080B0080C155 /* teletubbies-Bridging-Header.h */,
+				CDE7D8D8208E15160080C155 /* SWRevealViewController.h */,
+				CDE7D8D7208E15160080C155 /* SWRevealViewController.m */,
+				CDE7D8DB208E15BF0080C155 /* teletubbies-Bridging-Header.h */,
 			);
 			path = "Supporting files";
+			sourceTree = "<group>";
+		};
+		CDE7D8D0208E11C40080C155 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CDE7D8D3208E11F40080C155 /* ChatVC.swift */,
+				CDE7D8D5208E12060080C155 /* ChannelVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		CDE7D8D1208E11CF0080C155 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CDE7D8D2208E11D40080C155 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		CDF54C1E208DFA3800F050C4 = {
 			isa = PBXGroup;
 			children = (
-				CDE7D8CB208E07C50080C155 /* Supporting files */,
 				CDF54C29208DFA3800F050C4 /* teletubbies */,
 				CDF54C28208DFA3800F050C4 /* Products */,
 				C9B1B877FF98E3D46FAB5D86 /* Pods */,
@@ -93,8 +117,11 @@
 		CDF54C29208DFA3800F050C4 /* teletubbies */ = {
 			isa = PBXGroup;
 			children = (
+				CDE7D8D2208E11D40080C155 /* Model */,
+				CDE7D8D1208E11CF0080C155 /* View */,
+				CDE7D8D0208E11C40080C155 /* Controller */,
+				CDE7D8CB208E07C50080C155 /* Supporting files */,
 				CDF54C2A208DFA3800F050C4 /* AppDelegate.swift */,
-				CDF54C2C208DFA3800F050C4 /* ViewController.swift */,
 				CDF54C2E208DFA3800F050C4 /* Main.storyboard */,
 				CDF54C31208DFA3A00F050C4 /* Assets.xcassets */,
 				CDF54C33208DFA3A00F050C4 /* LaunchScreen.storyboard */,
@@ -220,9 +247,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDF54C2D208DFA3800F050C4 /* ViewController.swift in Sources */,
+				CDE7D8D6208E12060080C155 /* ChannelVC.swift in Sources */,
+				CDE7D8D4208E11F40080C155 /* ChatVC.swift in Sources */,
 				CDF54C2B208DFA3800F050C4 /* AppDelegate.swift in Sources */,
-				CDE7D8CF208E080D0080C155 /* SWRevealViewController.m in Sources */,
+				CDE7D8DA208E15A70080C155 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -377,7 +405,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.farisdahleh.teletubbies;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Supporting files/teletubbies-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "./teletubbies/Supporting files/teletubbies-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -399,7 +427,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.farisdahleh.teletubbies;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Supporting files/teletubbies-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "./teletubbies/Supporting files/teletubbies-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
