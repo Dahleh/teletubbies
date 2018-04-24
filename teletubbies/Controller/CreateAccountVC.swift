@@ -1,5 +1,5 @@
 //
-//  LoginVC.swift
+//  CreateAccountVC.swift
 //  teletubbies
 //
 //  Created by Faris Dahleh on 4/24/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginVC: UIViewController {
+class CreateAccountVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,12 +16,9 @@ class LoginVC: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    @IBAction func closeBtnPressed(_ sender: Any) {
-        dismiss(animated: true, completion: nil)
-    }
     
-    @IBAction func createAccountPressed(_ sender: Any) {
-        performSegue(withIdentifier: TO_CREATE, sender: nil)
+    @IBAction func closePressed(_ sender: Any) {
+        performSegue(withIdentifier: UNWIND, sender: nil)
     }
     
 }
