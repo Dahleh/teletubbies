@@ -15,6 +15,7 @@
 		CDE7D8E0208E9F420080C155 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE7D8DF208E9F420080C155 /* Constants.swift */; };
 		CDE7D8E2208EA3140080C155 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE7D8E1208EA3140080C155 /* LoginVC.swift */; };
 		CDE7D8E4208EA7250080C155 /* CreateAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE7D8E3208EA7250080C155 /* CreateAccountVC.swift */; };
+		CDE7D8E7208F75080080C155 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE7D8E6208F75080080C155 /* AuthService.swift */; };
 		CDF54C2B208DFA3800F050C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF54C2A208DFA3800F050C4 /* AppDelegate.swift */; };
 		CDF54C30208DFA3800F050C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDF54C2E208DFA3800F050C4 /* Main.storyboard */; };
 		CDF54C32208DFA3A00F050C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDF54C31208DFA3A00F050C4 /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 		CDE7D8DF208E9F420080C155 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		CDE7D8E1208EA3140080C155 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		CDE7D8E3208EA7250080C155 /* CreateAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountVC.swift; sourceTree = "<group>"; };
+		CDE7D8E6208F75080080C155 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		CDF54C27208DFA3800F050C4 /* teletubbies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = teletubbies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDF54C2A208DFA3800F050C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDF54C2F208DFA3800F050C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -115,6 +117,14 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		CDE7D8E5208F74E90080C155 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CDE7D8E6208F75080080C155 /* AuthService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		CDF54C1E208DFA3800F050C4 = {
 			isa = PBXGroup;
 			children = (
@@ -136,6 +146,7 @@
 		CDF54C29208DFA3800F050C4 /* teletubbies */ = {
 			isa = PBXGroup;
 			children = (
+				CDE7D8E5208F74E90080C155 /* Services */,
 				CDE7D8DE208E9F260080C155 /* Utilities */,
 				CDE7D8D2208E11D40080C155 /* Model */,
 				CDE7D8D1208E11CF0080C155 /* View */,
@@ -270,6 +281,7 @@
 				CDE7D8D6208E12060080C155 /* ChannelVC.swift in Sources */,
 				CDE7D8D4208E11F40080C155 /* ChatVC.swift in Sources */,
 				CDE7D8E4208EA7250080C155 /* CreateAccountVC.swift in Sources */,
+				CDE7D8E7208F75080080C155 /* AuthService.swift in Sources */,
 				CDE7D8E2208EA3140080C155 /* LoginVC.swift in Sources */,
 				CDE7D8DD208E1D590080C155 /* GradientView.swift in Sources */,
 				CDF54C2B208DFA3800F050C4 /* AppDelegate.swift in Sources */,
