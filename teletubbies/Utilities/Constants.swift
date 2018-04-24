@@ -21,6 +21,7 @@ let URL_ADD_USER = "\(BASE_URL)user/add"
 let TO_LOGIN = "toLogin"
 let TO_CREATE = "toCreateAccount"
 let UNWIND = "unwindToChannel"
+let TO_AVATAR_PICKER = "toAvatarPicker"
 
 //User Defults
 let LOGGED_IN_KEY = "loggedIn"

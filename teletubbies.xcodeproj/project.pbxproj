@@ -18,6 +18,8 @@
 		CDE7D8E7208F75080080C155 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE7D8E6208F75080080C155 /* AuthService.swift */; };
 		CDE7D8E9208F846F0080C155 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE7D8E8208F846F0080C155 /* RoundedButton.swift */; };
 		CDE7D8EB208F901F0080C155 /* UserDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE7D8EA208F901F0080C155 /* UserDataService.swift */; };
+		CDE7D8ED208FE2120080C155 /* AvatarPickerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE7D8EC208FE2120080C155 /* AvatarPickerVC.swift */; };
+		CDE7D8EF208FE3EF0080C155 /* AvatarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE7D8EE208FE3EF0080C155 /* AvatarCell.swift */; };
 		CDF54C2B208DFA3800F050C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF54C2A208DFA3800F050C4 /* AppDelegate.swift */; };
 		CDF54C30208DFA3800F050C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDF54C2E208DFA3800F050C4 /* Main.storyboard */; };
 		CDF54C32208DFA3A00F050C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDF54C31208DFA3A00F050C4 /* Assets.xcassets */; };
@@ -39,6 +41,8 @@
 		CDE7D8E6208F75080080C155 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		CDE7D8E8208F846F0080C155 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		CDE7D8EA208F901F0080C155 /* UserDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataService.swift; sourceTree = "<group>"; };
+		CDE7D8EC208FE2120080C155 /* AvatarPickerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarPickerVC.swift; sourceTree = "<group>"; };
+		CDE7D8EE208FE3EF0080C155 /* AvatarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AvatarCell.swift; sourceTree = "<group>"; };
 		CDF54C27208DFA3800F050C4 /* teletubbies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = teletubbies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDF54C2A208DFA3800F050C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDF54C2F208DFA3800F050C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -94,6 +98,7 @@
 				CDE7D8D5208E12060080C155 /* ChannelVC.swift */,
 				CDE7D8E1208EA3140080C155 /* LoginVC.swift */,
 				CDE7D8E3208EA7250080C155 /* CreateAccountVC.swift */,
+				CDE7D8EC208FE2120080C155 /* AvatarPickerVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -103,6 +108,7 @@
 			children = (
 				CDE7D8DC208E1D590080C155 /* GradientView.swift */,
 				CDE7D8E8208F846F0080C155 /* RoundedButton.swift */,
+				CDE7D8EE208FE3EF0080C155 /* AvatarCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -285,6 +291,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDE7D8D6208E12060080C155 /* ChannelVC.swift in Sources */,
+				CDE7D8ED208FE2120080C155 /* AvatarPickerVC.swift in Sources */,
 				CDE7D8E9208F846F0080C155 /* RoundedButton.swift in Sources */,
 				CDE7D8D4208E11F40080C155 /* ChatVC.swift in Sources */,
 				CDE7D8EB208F901F0080C155 /* UserDataService.swift in Sources */,
@@ -292,6 +299,7 @@
 				CDE7D8E7208F75080080C155 /* AuthService.swift in Sources */,
 				CDE7D8E2208EA3140080C155 /* LoginVC.swift in Sources */,
 				CDE7D8DD208E1D590080C155 /* GradientView.swift in Sources */,
+				CDE7D8EF208FE3EF0080C155 /* AvatarCell.swift in Sources */,
 				CDF54C2B208DFA3800F050C4 /* AppDelegate.swift in Sources */,
 				CDE7D8DA208E15A70080C155 /* SWRevealViewController.m in Sources */,
 				CDE7D8E0208E9F420080C155 /* Constants.swift in Sources */,
