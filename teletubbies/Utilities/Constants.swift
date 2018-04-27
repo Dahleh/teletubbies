@@ -33,3 +33,6 @@ let USER_EMAIL = "userEmail"
 let HEADER = [
     "Content-Type": "application/json; charset=utf-8"
 ]
+
+//Notification Constants
+let NOTIF_USER_DATA_DID_CHANGE = Notification.Name("notifUserDataChanged")
