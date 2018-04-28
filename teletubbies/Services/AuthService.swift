@@ -26,17 +26,18 @@ class AuthService {
     }
     
     var authToken: String {
-        get{
-            return defults.value(forKey: TOKEN_KEY) as! String
+        get {
+            return defults.value(forKey: TOKEN_KEY) as? String ?? ""
+            
         }
-        set{
+        set {
             defults.set(newValue, forKey: TOKEN_KEY)
         }
     }
     
     var userEmail: String {
         get{
-            return defults.value(forKey: USER_EMAIL) as! String
+            return defults.value(forKey: USER_EMAIL) as? String ?? ""
         }
         set{
             defults.set(newValue, forKey: USER_EMAIL)

@@ -26,8 +26,8 @@ let UNWIND = "unwindToChannel"
 let TO_AVATAR_PICKER = "toAvatarPicker"
 
 //User Defults
-let LOGGED_IN_KEY = "loggedIn"
 let TOKEN_KEY = "token"
+let LOGGED_IN_KEY = "loggedIn"
 let USER_EMAIL = "userEmail"
 
 //Headers
@@ -36,7 +36,7 @@ let HEADER = [
     "Content-Type": "application/json; charset=utf-8"
 ]
 let BEARER_HEADER = [
-    "Authorization": "Bearer \(AuthService.instance.authToken)",
+    "Authorization":"Bearer \(AuthService.instance.authToken)",
     "Content-Type": "application/json; charset=utf-8"
 ]
 //Notification Constants
