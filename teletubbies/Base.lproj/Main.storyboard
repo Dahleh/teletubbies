@@ -229,6 +229,9 @@
                                         <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="logInPressed:" destination="H6m-92-zg4" eventType="touchUpInside" id="Mee-bz-i6B"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="0cw-ag-nkF">
                                 <rect key="frame" x="62.5" y="160" width="250" height="86"/>
@@ -269,6 +272,10 @@
                                     </view>
                                 </subviews>
                             </stackView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Ttp-35-oxx">
+                                <rect key="frame" x="169" y="215.5" width="37" height="37"/>
+                                <color key="color" red="0.25882352941176467" green="0.32941176470588235" blue="0.72549019607843135" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bfE-qm-kle">
                                 <rect key="frame" x="62.5" y="336" width="250" height="30"/>
                                 <constraints>
@@ -291,8 +298,10 @@
                             <constraint firstItem="bfE-qm-kle" firstAttribute="centerX" secondItem="VFS-wy-NgE" secondAttribute="centerX" id="NHn-qa-sOU"/>
                             <constraint firstItem="0cw-ag-nkF" firstAttribute="centerX" secondItem="VFS-wy-NgE" secondAttribute="centerX" id="Oqs-dm-7kU"/>
                             <constraint firstItem="0cw-ag-nkF" firstAttribute="top" secondItem="bcz-ZR-khU" secondAttribute="bottom" constant="40" id="Q9K-Dg-eDq"/>
+                            <constraint firstItem="Ttp-35-oxx" firstAttribute="centerX" secondItem="VFS-wy-NgE" secondAttribute="centerX" id="UPY-k0-Gvb"/>
                             <constraint firstItem="bfE-qm-kle" firstAttribute="top" secondItem="pI5-XK-869" secondAttribute="bottom" id="UXA-Wq-tIT"/>
                             <constraint firstItem="bcz-ZR-khU" firstAttribute="top" secondItem="7jB-2Z-HCA" secondAttribute="top" constant="60" id="WdY-e2-4B3"/>
+                            <constraint firstItem="Ttp-35-oxx" firstAttribute="centerY" secondItem="VFS-wy-NgE" secondAttribute="centerY" constant="-100" id="Ylt-AI-mxh"/>
                             <constraint firstItem="C4q-Z6-qVv" firstAttribute="top" secondItem="7jB-2Z-HCA" secondAttribute="top" constant="8" id="ZTu-qD-Pz8"/>
                             <constraint firstItem="pI5-XK-869" firstAttribute="centerX" secondItem="VFS-wy-NgE" secondAttribute="centerX" id="ilc-wp-szT"/>
                             <constraint firstItem="pI5-XK-869" firstAttribute="top" secondItem="0cw-ag-nkF" secondAttribute="bottom" constant="40" id="w4Y-4b-mi2"/>
@@ -300,6 +309,9 @@
                         <viewLayoutGuide key="safeArea" id="7jB-2Z-HCA"/>
                     </view>
                     <connections>
+                        <outlet property="passwordTxt" destination="4nm-7h-qPg" id="0df-lv-0nL"/>
+                        <outlet property="spinner" destination="Ttp-35-oxx" id="Co5-89-Tme"/>
+                        <outlet property="userNameTxt" destination="wZk-cQ-AVe" id="mQM-Kg-tng"/>
                         <segue destination="KLt-lk-trA" kind="show" identifier="toCreateAccount" id="k0U-RT-rYG"/>
                     </connections>
                 </viewController>

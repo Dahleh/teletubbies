@@ -16,6 +16,7 @@ let BASE_URL = "https://teletubbies.herokuapp.com/v1/"
 let URL_REGISTER = "\(BASE_URL)account/register"
 let URL_LOGIN = "\(BASE_URL)account/login"
 let URL_ADD_USER = "\(BASE_URL)user/add"
+let URL_USER_BY_EMAIL = "\(BASE_URL)user/byEmail/"
 
 //Segue
 let TO_LOGIN = "toLogin"
@@ -33,6 +34,9 @@ let USER_EMAIL = "userEmail"
 let HEADER = [
     "Content-Type": "application/json; charset=utf-8"
 ]
-
+let BEARER_HEADER = [
+    "Authorization": "Bearer \(AuthService.instance.authToken)",
+    "Content-Type": "application/json; charset=utf-8"
+]
 //Notification Constants
 let NOTIF_USER_DATA_DID_CHANGE = Notification.Name("notifUserDataChanged")
