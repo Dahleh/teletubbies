@@ -29,6 +29,7 @@
 		CDE7D9012094E5960080C155 /* AddChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE7D8FF2094E5960080C155 /* AddChannelVC.swift */; };
 		CDE7D9022094E5960080C155 /* AddChannelVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = CDE7D9002094E5960080C155 /* AddChannelVC.xib */; };
 		CDE7D90420950A030080C155 /* SocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE7D90320950A030080C155 /* SocketService.swift */; };
+		CDE7D906209538A40080C155 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDE7D905209538A40080C155 /* Message.swift */; };
 		CDF54C2B208DFA3800F050C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF54C2A208DFA3800F050C4 /* AppDelegate.swift */; };
 		CDF54C30208DFA3800F050C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDF54C2E208DFA3800F050C4 /* Main.storyboard */; };
 		CDF54C32208DFA3A00F050C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CDF54C31208DFA3A00F050C4 /* Assets.xcassets */; };
@@ -61,6 +62,7 @@
 		CDE7D8FF2094E5960080C155 /* AddChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddChannelVC.swift; sourceTree = "<group>"; };
 		CDE7D9002094E5960080C155 /* AddChannelVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddChannelVC.xib; sourceTree = "<group>"; };
 		CDE7D90320950A030080C155 /* SocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketService.swift; sourceTree = "<group>"; };
+		CDE7D905209538A40080C155 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		CDF54C27208DFA3800F050C4 /* teletubbies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = teletubbies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDF54C2A208DFA3800F050C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CDF54C2F208DFA3800F050C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				CDE7D8FB2094D88E0080C155 /* Channel.swift */,
+				CDE7D905209538A40080C155 /* Message.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -333,6 +336,7 @@
 				CDE7D8D6208E12060080C155 /* ChannelVC.swift in Sources */,
 				CDE7D8ED208FE2120080C155 /* AvatarPickerVC.swift in Sources */,
 				CDE7D8E9208F846F0080C155 /* RoundedButton.swift in Sources */,
+				CDE7D906209538A40080C155 /* Message.swift in Sources */,
 				CDE7D8FC2094D88E0080C155 /* Channel.swift in Sources */,
 				CDE7D8D4208E11F40080C155 /* ChatVC.swift in Sources */,
 				CDE7D8FA2094D8340080C155 /* MessageService.swift in Sources */,
