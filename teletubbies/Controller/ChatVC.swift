@@ -10,7 +10,7 @@ import UIKit
 
 class ChatVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
-    
+    //Outlets
     @IBOutlet var messageTxt: UITextField!
     @IBOutlet var menuBtn: UIButton!
     @IBOutlet var sendBtn: UIButton!
