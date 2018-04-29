@@ -151,6 +151,8 @@ class ChatVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
                     self.messageTxt.text = ""
                     self.messageTxt.resignFirstResponder()
                     SocketService.instance.socket.emit("stopType", UserDataService.instance.name, channelId)
+                    self.isTyping = false
+                    self.sendBtn.isHidden = true
                 }
             }
         }
