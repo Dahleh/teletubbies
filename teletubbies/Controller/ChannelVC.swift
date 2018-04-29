@@ -9,11 +9,7 @@
 import UIKit
 
 class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    
 
-    
-    
-    
     @IBOutlet var tableView: UITableView!
     @IBOutlet var loginBtn: UIButton!
     @IBAction func prepareForUnwind(segue: UIStoryboardSegue){}
@@ -24,30 +20,25 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         tableView.delegate = self
         tableView.dataSource = self
         self.revealViewController().rearViewRevealWidth = self.view.frame.size.width - 60
-        
         NotificationCenter.default.addObserver(self, selector: #selector(ChannelVC.userDataDidChanged(_:)), name: NOTIF_USER_DATA_DID_CHANGE, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(ChannelVC.channelsLoaded(_:)), name: NOTIF_CHANNELS_LOADED, object: nil)
-        
         SocketService.instance.getChannel { (success) in
             if success{
                 self.tableView.reloadData()
             }
         }
-        
         SocketService.instance.getMessage { (newMessage) in
             if newMessage.channelId != MessageService.instance.selectedChannel?.id && AuthService.instance.isLoggedIn {
                 MessageService.instance.unReadChannels.append(newMessage.channelId)
                 self.tableView.reloadData()
             }
         }
-        
     }
     override func viewDidAppear(_ animated: Bool) {
         setupUserInfo()
     }
 
     @IBAction func loginBtnPressed(_ sender: Any) {
-        
         if AuthService.instance.isLoggedIn {
             let profile = ProfileVC()
             profile.modalPresentationStyle = .custom
@@ -55,7 +46,6 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         }else{
             performSegue(withIdentifier: TO_LOGIN, sender: nil)
         }
-        
     }
     
     @objc func userDataDidChanged(_ notif: Notification){
@@ -70,13 +60,11 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             loginBtn.setTitle(UserDataService.instance.name, for: .normal)
             userImg.image = UIImage(named: UserDataService.instance.avatarName)
             userImg.backgroundColor = UserDataService.instance.returnUIColor(components: UserDataService.instance.avatarColor)
-            
         }else {
             loginBtn.setTitle("Login", for: .normal)
             userImg.image = UIImage(named: "menuProfileIcon")
             userImg.backgroundColor = UIColor.clear
             tableView.reloadData()
-            
         }
     }
     
@@ -100,16 +88,13 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let channel = MessageService.instance.channels[indexPath.row]
         MessageService.instance.selectedChannel = channel
-        
         if MessageService.instance.unReadChannels.count > 0{
             MessageService.instance.unReadChannels = MessageService.instance.unReadChannels.filter{$0 != channel.id}
         }
         let index = IndexPath(row: indexPath.row, section: 0)
         tableView.reloadRows(at: [index], with: .none)
         tableView.selectRow(at: index, animated: false, scrollPosition: .none)
-        
         NotificationCenter.default.post(name: NOTIF_CHANNELS_SELECTED, object: nil)
-        
         self.revealViewController().revealToggle(animated: true)
     }
     
@@ -118,8 +103,6 @@ class ChannelVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
             let addChannel = AddChannelVC()
             addChannel.modalPresentationStyle = .custom
             present(addChannel, animated: true, completion: nil)
-
         }
     }
-    
 }

@@ -15,7 +15,6 @@ class ChatVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
     @IBOutlet var menuBtn: UIButton!
     @IBOutlet var sendBtn: UIButton!
     @IBOutlet var typingUserLbl: UILabel!
-    
     @IBOutlet var channelNameLbl: UILabel!
     @IBOutlet var tableView: UITableView!
     
@@ -25,7 +24,6 @@ class ChatVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-        
         tableView.estimatedRowHeight = 80
         tableView.rowHeight = UITableViewAutomaticDimension
         view.bindToKeyboard()
@@ -33,13 +31,10 @@ class ChatVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
         let tap = UITapGestureRecognizer(target: self, action: #selector(ChatVC.handleTap))
         view.addGestureRecognizer(tap)
         menuBtn.addTarget(self.revealViewController(), action: #selector(SWRevealViewController.revealToggle(_:)), for: .touchUpInside)
-        
         self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         self.view.addGestureRecognizer(self.revealViewController().tapGestureRecognizer())
-        
         NotificationCenter.default.addObserver(self, selector: #selector(ChatVC.userDataDidChanged(_:)), name: NOTIF_USER_DATA_DID_CHANGE, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(ChatVC.channelSelected(_:)), name: NOTIF_CHANNELS_SELECTED, object: nil)
-        
         SocketService.instance.getMessage { (newMessage) in
             if newMessage.channelId == MessageService.instance.selectedChannel?.id && AuthService.instance.isLoggedIn {
                 MessageService.instance.messages.append(newMessage)
@@ -50,17 +45,6 @@ class ChatVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
                 }
             }
         }
-        
-//        SocketService.instance.getMessage { (success) in
-//            if success{
-//                self.tableView.reloadData()
-//                let endIndex = IndexPath(row: MessageService.instance.messages.count - 1, section: 0)
-//                if MessageService.instance.messages.count > 0 {
-//                    self.tableView.scrollToRow(at: endIndex, at: .bottom, animated: false)
-//                }
-//            }
-//        }
-        
         SocketService.instance.getTypingUsers { (typingUsers) in
             guard let channelId = MessageService.instance.selectedChannel?.id else {return}
             var names = ""
@@ -85,7 +69,6 @@ class ChatVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
                 self.typingUserLbl.text = ""
             }
         }
-        
         if AuthService.instance.isLoggedIn {
             AuthService.instance.findUserByEmail { (success) in
                 NotificationCenter.default.post(name: NOTIF_USER_DATA_DID_CHANGE, object: nil)
@@ -156,7 +139,6 @@ class ChatVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
         if AuthService.instance.isLoggedIn {
             guard let channelId = MessageService.instance.selectedChannel?.id else {return}
             guard let message = messageTxt.text else {return}
-            
             SocketService.instance.addMessage(messageBody: message, userId: UserDataService.instance.id, channelId: channelId) { (success) in
                 if success{
                     self.messageTxt.text = ""
@@ -185,5 +167,4 @@ class ChatVC: UIViewController,UITableViewDelegate,UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return MessageService.instance.messages.count
     }
-    
 }

@@ -34,7 +34,6 @@ class LoginVC: UIViewController {
     @IBAction func logInPressed(_ sender: Any) {
         spinner.isHidden = false
         spinner.startAnimating()
-        
         guard let email = userNameTxt.text , userNameTxt.text != "" else {return}
         guard let password = passwordTxt.text , passwordTxt.text != "" else {return}
         AuthService.instance.lognUser(email: email, password: password) { (success) in
@@ -49,7 +48,6 @@ class LoginVC: UIViewController {
                 })
             }
         }
-        
     }
     
     func setupView(){

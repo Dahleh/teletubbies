@@ -13,7 +13,6 @@ class RoundedImage: UIImageView {
 
     override func awakeFromNib() {
         self.setupView()
-        
     }
     
     func setupView(){
@@ -25,6 +24,4 @@ class RoundedImage: UIImageView {
         super.prepareForInterfaceBuilder()
         self.setupView()
     }
-    
-
 }

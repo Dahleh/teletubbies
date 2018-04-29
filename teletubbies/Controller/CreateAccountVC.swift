@@ -11,7 +11,6 @@ import UIKit
 class CreateAccountVC: UIViewController {
     
     //Outlets
-    
     @IBOutlet var usernameTxt: UITextField!
     @IBOutlet var emailTxt: UITextField!
     @IBOutlet var passwordTxt: UITextField!
@@ -23,17 +22,12 @@ class CreateAccountVC: UIViewController {
     var avatarColor = "[0.5, 0.5, 0.5, 1]"
     var bgColor: UIColor?
     
-    
-    
-    
     //Colors
     let placeHolderColor = #colorLiteral(red: 0.2588235294, green: 0.3294117647, blue: 0.7254901961, alpha: 0.5)
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
-        
-
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -52,7 +46,6 @@ class CreateAccountVC: UIViewController {
         guard let name = usernameTxt.text , usernameTxt.text != "" else {return}
         guard let email = emailTxt.text , emailTxt.text != "" else {return}
         guard let pass = passwordTxt.text , passwordTxt.text != "" else {return}
-        
         AuthService.instance.registerUser(email: email, password: pass) { (success) in
             if success{
                 AuthService.instance.lognUser(email: email, password: pass, completion: { (success) in
@@ -69,7 +62,6 @@ class CreateAccountVC: UIViewController {
         }
     }
     @IBAction func pickAvatarPressed(_ sender: Any) {
-        
         performSegue(withIdentifier: TO_AVATAR_PICKER, sender: nil)
     }
     
@@ -82,7 +74,6 @@ class CreateAccountVC: UIViewController {
         UIView.animate(withDuration: 0.2) {
             self.userImg.backgroundColor = self.bgColor
         }
-        
     }
     
     @IBAction func closePressed(_ sender: Any) {
@@ -94,7 +85,6 @@ class CreateAccountVC: UIViewController {
         usernameTxt.attributedPlaceholder = NSAttributedString(string: "UserName", attributes: [NSAttributedStringKey.foregroundColor: placeHolderColor])
         emailTxt.attributedPlaceholder = NSAttributedString(string: "Email", attributes: [NSAttributedStringKey.foregroundColor: placeHolderColor])
         passwordTxt.attributedPlaceholder = NSAttributedString(string: "Password", attributes: [NSAttributedStringKey.foregroundColor: placeHolderColor])
-        
         let tap = UITapGestureRecognizer(target: self, action: #selector(CreateAccountVC.handleTap))
         view.addGestureRecognizer(tap)
     }
@@ -102,5 +92,4 @@ class CreateAccountVC: UIViewController {
     @objc func handleTap(){
         view.endEditing(true)
     }
-    
 }
