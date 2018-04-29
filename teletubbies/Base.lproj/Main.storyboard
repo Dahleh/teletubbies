@@ -50,7 +50,7 @@
                                         <state key="normal" image="smackBurger"/>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Teletubbies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3XP-db-gdn">
-                                        <rect key="frame" x="143" y="44.5" width="88.5" height="23.5"/>
+                                        <rect key="frame" x="143.5" y="44.5" width="88.5" height="23.5"/>
                                         <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -143,11 +143,19 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FHl-eT-gSL">
+                                <rect key="frame" x="8" y="621" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="7LJ-Ti-nfK" firstAttribute="trailing" secondItem="Z5g-pg-9Za" secondAttribute="trailing" constant="8" id="3AV-bo-LLl"/>
+                            <constraint firstItem="gLo-qF-88c" firstAttribute="top" secondItem="FHl-eT-gSL" secondAttribute="bottom" constant="6" id="3Fs-Dt-wE2"/>
                             <constraint firstItem="ubU-VB-ipV" firstAttribute="trailing" secondItem="7LJ-Ti-nfK" secondAttribute="trailing" id="6Zd-m4-m2W"/>
+                            <constraint firstItem="FHl-eT-gSL" firstAttribute="leading" secondItem="7LJ-Ti-nfK" secondAttribute="leading" constant="8" id="7XJ-zS-lyX"/>
                             <constraint firstItem="gLo-qF-88c" firstAttribute="top" secondItem="k41-XT-kwy" secondAttribute="bottom" constant="30" id="JVi-7o-leK"/>
                             <constraint firstItem="Z5g-pg-9Za" firstAttribute="centerY" secondItem="gLo-qF-88c" secondAttribute="centerY" id="LLf-Mo-gZg"/>
                             <constraint firstItem="ubU-VB-ipV" firstAttribute="top" secondItem="gnC-fz-IFd" secondAttribute="top" id="NrF-lP-d4X"/>
@@ -167,6 +175,7 @@
                         <outlet property="messageTxt" destination="gLo-qF-88c" id="3td-S5-nai"/>
                         <outlet property="sendBtn" destination="Z5g-pg-9Za" id="ZDi-KY-qgc"/>
                         <outlet property="tableView" destination="k41-XT-kwy" id="dD3-70-Tug"/>
+                        <outlet property="typingUserLbl" destination="FHl-eT-gSL" id="r4o-sV-EdN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Aua-rd-Wwh" userLabel="First Responder" sceneMemberID="firstResponder"/>
